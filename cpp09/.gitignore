@@ -1,0 +1,24 @@
+# Objetos y dependencias
+objs/
+deps/
+*.o
+*.d
+
+# Símbolos de depuración (macOS)
+*.dSYM/
+
+# Ejecutables
+ex00/btc
+
+# Linux / Core dumps
+core
+core.*
+vgcore.*
+*.log
+
+# Archivos temporales de editores (Vim/Emacs)
+*.swp
+*.swo
+*~
+\#*\#
+.\#*

@@ -1,0 +1,39 @@
+# Objetos y dependencias
+objs/
+deps/
+*.o
+*.d
+
+# Símbolos de depuración (macOS)
+*.dSYM/
+
+# Archivos de salida de ejercicios
+*_shrubbery
+
+# Ejecutables
+ex00/bureaucrat
+ex01/form
+ex02/form
+ex02/test_high
+ex02/test_low
+ex02/test_main_low
+ex02/test_only_low
+ex03/intern
+ex03/simple_test
+ex03/hybrid_test
+ex03/intern_form
+ex03/simple_test
+ex03/hybrid_test
+
+# Linux / Core dumps
+core
+core.*
+vgcore.*
+*.log
+
+# Archivos temporales de editores (Vim/Emacs)
+*.swp
+*.swo
+*~
+\#*\#
+.\#*

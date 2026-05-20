@@ -1,257 +1,48 @@
-# CPP PISCINE 02 - PROGRAMACIÓN ORIENTADA A OBJETOS
+# Mi Piscina de C++ - Parte 2: Programación Orientada a Objetos
 
-## 📋 **DESCRIPCIÓN GENERAL**
+¡Hola! Bienvenido a mi repositorio de la segunda parte de la piscina de C++ de 42. Aquí es donde las cosas se ponen realmente interesantes. He pasado de los conceptos básicos a dominar la **Programación Orientada a Objetos (POO)**, los patrones de diseño y la potencia de la Standard Template Library (STL).
 
-Este repositorio contiene la segunda parte de la piscina C++ de 42, enfocada en **Programación Orientada a Objetos (POO)** y conceptos avanzados de C++98. Cada módulo introduce progresivamente conceptos más complejos de OOP, patrones de diseño y gestión de memoria.
+Este viaje ha sido un reto constante para escribir código no solo funcional, sino elegante, robusto y profesional, siempre respetando el estándar C++98.
 
-## 🎯 **OBJETIVOS DE LA PISCINA**
+## 🚀 Mis Módulos
 
-- **Herencia y Polimorfismo**: Jerarquías de clases y métodos virtuales
-- **Patrones de Diseño**: Factory Method, Template Method, Strategy
-- **Gestión de Memoria**: RAII, new/delete, punteros inteligentes
-- **Excepciones**: Manejo robusto de errores
-- **C++98**: Compatibilidad total con el estándar C++98
-- **Contenedores STL**: Vectores, listas, mapas, algoritmos
-- **Algoritmos**: Ordenación, búsqueda, manipulación de datos
+He organizado cada módulo con su propia documentación detallada. Aquí tienes acceso directo a cada uno de ellos:
 
-## 📁 **ESTRUCTURA DEL REPOSITORIO**
+### [CPP05 - Burocracia y Excepciones](./cpp05/)
+En este módulo aprendí a manejar errores de forma profesional y a diseñar jerarquías de clases sólidas.
+*   📖 [**Guía de Usuario**](./cpp05/USER_DOC.md) | [**Documentación de Desarrollo**](./cpp05/DEV_DOC.md)
 
-```
-cpp_piscine_2/
-├── cpp05/          # Excepciones, Herencia, Polimorfismo
-├── cpp06/          # Casts, Serialización
-├── cpp07/          # Templates
-├── cpp08/          # STL Containers
-├── cpp09/          # STL Algorithms
-└── README.md       # Este archivo
-```
+### [CPP06 - El Arte del Casting](./cpp06/)
+Aquí profundicé en la seguridad de tipos y en cómo C++ nos obliga a ser explícitos con nuestras intenciones.
+*   📖 [**Guía de Usuario**](./cpp06/USER_DOC.md) | [**Documentación de Desarrollo**](./cpp06/DEV_DOC.md)
 
-## 🚀 **MÓDULOS IMPLEMENTADOS**
+### [CPP07 - Plantillas (Templates)](./cpp07/)
+El descubrimiento de la programación genérica. Escribir código que funciona para cualquier tipo de dato fue una revelación.
+*   📖 [**Guía de Usuario**](./cpp07/USER_DOC.md) | [**Documentación de Desarrollo**](./cpp07/DEV_DOC.md)
 
-### **CPP05 - EXCEPCIONES, HERENCIA Y POLIMORFISMO** ✅
-- **Tema**: Manejo de excepciones, herencia, clases abstractas
-- **Conceptos**: Bureaucrat, Formularios, Factory Method
-- **Ejercicios**: 4 ejercicios (ex00-ex03)
-- **Enlace**: [Ver CPP05](./cpp05/)
+### [CPP08 - Dominando la STL](./cpp08/)
+Contenedores, algoritmos e iteradores. Aquí es donde aprendí a usar las herramientas estándar para no reinventar la rueda.
+*   📖 [**Guía de Usuario**](./cpp08/USER_DOC.md) | [**Documentación de Desarrollo**](./cpp08/DEV_DOC.md)
 
-**Temas clave:**
-- Excepciones personalizadas
-- Herencia y polimorfismo
-- Clases abstractas
-- Factory Method Pattern
-- Template Method Pattern
-
-### **CPP06 - CASTS Y SERIALIZACIÓN** 🔄
-- **Tema**: Casts explícitos, serialización de objetos
-- **Conceptos**: static_cast, dynamic_cast, reinterpret_cast, const_cast
-- **Estado**: En desarrollo
-- **Enlace**: [Ver CPP06](./cpp06/)
-
-### **CPP07 - TEMPLATES** 🔄
-- **Tema**: Programación genérica con templates
-- **Conceptos**: Template classes, template functions, specialization
-- **Estado**: En desarrollo
-- **Enlace**: [Ver CPP07](./cpp07/)
-
-### **CPP08 - CONTENEDORES STL** 🔄
-- **Tema**: Contenedores de la Standard Template Library
-- **Conceptos**: vector, list, map, set, stack, queue
-- **Estado**: En desarrollo
-- **Enlace**: [Ver CPP08](./cpp08/)
-
-### **CPP09 - ALGORITMOS STL** 🔄
-- **Tema**: Algoritmos de la Standard Template Library
-- **Conceptos**: sort, find, transform, accumulate, for_each
-- **Estado**: En desarrollo
-- **Enlace**: [Ver CPP09](./cpp09/)
-
-## 🎓 **PROGRESIÓN DE CONCEPTOS**
-
-### **CPP05 - Fundamentos OOP**
-```
-Bureaucrat (ex00) → Form (ex01) → AForm + Subclases (ex02) → Factory (ex03)
-```
-
-### **CPP06 - Casts y Serialización**
-```
-Casts explícitos → Serialización → Deserialización → Type safety
-```
-
-### **CPP07 - Templates**
-```
-Template functions → Template classes → Specialization → Metaprogramming
-```
-
-### **CPP08 - Contenedores STL**
-```
-vector → list → map → set → stack → queue → deque
-```
-
-### **CPP09 - Algoritmos STL**
-```
-sort → find → transform → accumulate → for_each → custom comparators
-```
-
-## 🔧 **CARACTERÍSTICAS TÉCNICAS**
-
-### **Compatibilidad C++98**
-- ✅ **Compilación**: `-std=c++98`
-- ✅ **Sin warnings**: `-Wall -Wextra -Werror`
-- ✅ **Punteros a función**: Sintaxis C++98
-- ✅ **Gestión de memoria**: new/delete
-- ✅ **Excepciones**: std::exception
-
-### **Patrones de Diseño Implementados**
-- **Factory Method**: Creación dinámica de objetos
-- **Template Method**: Algoritmos con pasos variables
-- **Strategy Pattern**: Comportamientos intercambiables
-- **RAII**: Gestión automática de recursos
-
-### **Conceptos OOP**
-- **Encapsulación**: Datos privados, métodos públicos
-- **Herencia**: Jerarquías de clases
-- **Polimorfismo**: Métodos virtuales
-- **Abstracción**: Clases abstractas
-
-## 📊 **ESTADÍSTICAS DEL PROYECTO**
-
-| Módulo | Ejercicios | Estado | Conceptos Clave |
-|--------|------------|--------|-----------------|
-| CPP05  | 4/4        | ✅     | Excepciones, Herencia, Polimorfismo |
-| CPP06  | 0/4        | 🔄     | Casts, Serialización |
-| CPP07  | 0/4        | 🔄     | Templates, Metaprogramming |
-| CPP08  | 0/4        | 🔄     | STL Containers |
-| CPP09  | 0/4        | 🔄     | STL Algorithms |
-
-## 🧪 **CASOS DE PRUEBA**
-
-### **CPP05 - Formularios Burocráticos**
-- Creación y validación de Bureaucrats
-- Firma y ejecución de formularios
-- Manejo de excepciones
-- Factory Method para creación dinámica
-
-### **CPP06 - Casts y Serialización**
-- Casts seguros entre tipos
-- Serialización de objetos complejos
-- Deserialización con validación
-- Type safety en runtime
-
-### **CPP07 - Templates**
-- Funciones genéricas
-- Clases template
-- Especialización de templates
-- Metaprogramación básica
-
-### **CPP08 - Contenedores STL**
-- Operaciones con vectores
-- Manipulación de listas
-- Uso de mapas y conjuntos
-- Pilas y colas
-
-### **CPP09 - Algoritmos STL**
-- Ordenación y búsqueda
-- Transformación de datos
-- Acumulación de valores
-- Iteradores personalizados
-
-## 🎯 **PUNTOS CLAVE PARA EL EXAMEN**
-
-### **1. Programación Orientada a Objetos**
-- Herencia y polimorfismo
-- Clases abstractas
-- Métodos virtuales
-- Encapsulación
-
-### **2. Patrones de Diseño**
-- Factory Method
-- Template Method
-- Strategy Pattern
-- RAII
-
-### **3. Gestión de Memoria**
-- new/delete
-- Punteros inteligentes
-- RAII
-- Gestión de excepciones
-
-### **4. STL (Standard Template Library)**
-- Contenedores
-- Algoritmos
-- Iteradores
-- Functores
-
-### **5. C++98**
-- Templates
-- Casts explícitos
-- Excepciones
-- Compatibilidad
-
-## 🚀 **CÓMO USAR EL REPOSITORIO**
-
-### **Navegación**
-```bash
-# Ver módulo específico
-cd cpp05/
-cd cpp06/
-cd cpp07/
-cd cpp08/
-cd cpp09/
-
-# Ver ejercicio específico
-cd cpp05/ex00/
-cd cpp05/ex01/
-cd cpp05/ex02/
-cd cpp05/ex03/
-```
-
-### **Compilación**
-```bash
-# Compilar ejercicio específico
-cd cpp05/ex00 && make
-cd cpp05/ex01 && make
-cd cpp05/ex02 && make
-cd cpp05/ex03 && make
-```
-
-### **Ejecución**
-```bash
-# Ejecutar programa
-./form
-./abstract_form
-./intern_form
-
-# Limpiar archivos
-make clean
-make fclean
-```
-
-## 📚 **RECURSOS ADICIONALES**
-
-### **Documentación**
-- [C++98 Standard](https://en.cppreference.com/w/cpp/98)
-- [Design Patterns](https://refactoring.guru/design-patterns)
-- [STL Reference](https://en.cppreference.com/w/cpp/container)
-- [C++ Exceptions](https://en.cppreference.com/w/cpp/error/exception)
-
-### **Conceptos Importantes**
-- **OOP**: Herencia, Polimorfismo, Encapsulación
-- **Patrones**: Factory, Template, Strategy
-- **STL**: Contenedores, Algoritmos, Iteradores
-- **Memoria**: RAII, new/delete, Punteros
-
-## 🎓 **CONCLUSIÓN**
-
-Este repositorio demuestra la implementación progresiva de conceptos avanzados de C++98:
-
-- ✅ **CPP05**: Excepciones, Herencia, Polimorfismo, Patrones de Diseño
-- 🔄 **CPP06**: Casts, Serialización (En desarrollo)
-- 🔄 **CPP07**: Templates, Metaprogramación (En desarrollo)
-- 🔄 **CPP08**: STL Containers (En desarrollo)
-- 🔄 **CPP09**: STL Algorithms (En desarrollo)
-
-**El proyecto está en desarrollo continuo y se actualiza regularmente.**
+### [CPP09 - Aplicaciones Reales](./cpp09/)
+El cierre de la piscina, aplicando todo lo aprendido sobre la STL para resolver problemas como el intercambio de Bitcoin.
+*   📖 [**Guía de Usuario**](./cpp09/USER_DOC.md) | [**Documentación de Desarrollo**](./cpp09/DEV_DOC.md)
 
 ---
 
-*Este README proporciona una visión general completa de la piscina C++02, incluyendo todos los módulos, conceptos implementados y recursos adicionales.*
+## 🛠️ Retos Técnicos Generales
+
+A lo largo de toda la piscina, me he enfrentado a varios desafíos que han moldeado mi forma de programar:
+
+1.  **El Estándar C++98**: Trabajar sin las comodidades del C++ moderno (como `auto`, `nullptr` o `lambda functions`) me ha obligado a entender profundamente cómo funciona el lenguaje por debajo.
+2.  **Gestión de Memoria y RAII**: Asegurar que cada `new` tenga su `delete` correspondiente, incluso cuando se lanzan excepciones, ha sido un ejercicio constante de disciplina.
+3.  **Abstracción vs. Complejidad**: Encontrar el equilibrio perfecto entre crear clases abstractas potentes y mantener el código legible y fácil de mantener.
+4.  **Seguridad de Tipos**: Aprender a usar los casts de C++ para evitar comportamientos indefinidos y errores silenciosos que son tan comunes en C.
+
+## 📊 TODO: Diagramas de Diseño
+
+- [ ] Implementar y enlazar los diagramas de diseño de software para cada módulo en sus respectivas secciones de desarrollo.
+
+---
+
+Espero que disfrutes explorando mi código tanto como yo disfruté escribiéndolo. ¡Cualquier feedback es más que bienvenido!

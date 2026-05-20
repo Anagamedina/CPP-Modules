@@ -3,54 +3,44 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: anamedin <anamedin@student.42barcel>       +#+  +:+       +#+         #
+#    By: assistant                                   +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2025/10/14 12:00:00 by anamedin          #+#    #+#              #
-#    Updated: 2025/10/14 12:00:00 by anamedin         ###   ########.fr        #
+#    Created: 2025/01/XX 00:00:00 by assistant         #+#    #+#              #
+#    Updated: 2025/01/XX 00:00:00 by assistant        ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = iter
-
+NAME = btc
 CXX = c++
-CXXFLAGS = -Wall -Wextra -Werror -std=c++98
+CXXFLAGS = -Wall -Wextra -Werror -std=c++98 -MMD -g
 
-SRCS = main.cpp
-OBJS = $(SRCS:.cpp=.o)
+OBJ_DIR = objs/
+DEP_DIR = deps/
+
+SRCS = main.cpp BitcoinExchange.cpp
+OBJS = $(addprefix $(OBJ_DIR), $(SRCS:.cpp=.o))
+DEPS = $(addprefix $(DEP_DIR), $(SRCS:.cpp=.d))
+
+.PHONY: all clean fclean re
 
 all: $(NAME)
 
 $(NAME): $(OBJS)
-	$(CXX) $(CXXFLAGS) $(OBJS) -o $(NAME)
+	$(CXX) $(CXXFLAGS) -o $(NAME) $(OBJS)
 
-%.o: %.cpp iter.hpp
+objs/%.o: %.cpp Makefile BitcoinExchange.hpp
+	@mkdir -p $(OBJ_DIR) $(DEP_DIR)
 	$(CXX) $(CXXFLAGS) -c $< -o $@
+	@mv $(@:.o=.d) $(DEP_DIR)
 
 clean:
-	rm -f $(OBJS)
+	rm -rf $(OBJ_DIR) $(DEP_DIR)
 
 fclean: clean
 	rm -f $(NAME)
 
 re: fclean all
 
-.PHONY: all clean fclean re
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+-include $(DEPS)
 
 

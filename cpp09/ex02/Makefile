@@ -1,9 +1,9 @@
-NAME = btc
+NAME = PmergeMe
 
 CXX = c++
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98
 
-SRCS = main.cpp BitcoinExchange.cpp
+SRCS = main.cpp PmergeMe.cpp
 OBJS = $(SRCS:.cpp=.o)
 
 all: $(NAME)
@@ -11,8 +11,8 @@ all: $(NAME)
 $(NAME): $(OBJS)
 	$(CXX) $(CXXFLAGS) $(OBJS) -o $(NAME)
 
-# Regla de compilacion: cada .o depende de su .cpp y del .hpp (evita relink)
-%.o: %.cpp BitcoinExchange.hpp
+# Cada .o depende de su .cpp y del .hpp (evita relink)
+%.o: %.cpp PmergeMe.hpp
 	$(CXX) $(CXXFLAGS) -c $< -o $@
 
 clean:
